@@ -29,4 +29,20 @@ $(function() {
         $('.team__slider').slick('slickNext')
     })
     
+
+    $('.testimonials__slider').slick({
+        arrows: false,
+        waitForAnimate: false,
+        dots: true,
+        appendDots: $('.testimonials__dots')
+    })
+    $('.testimonial__prev').on('click', function (e) {
+        e.preventDefault()
+        $('.testimonials__slider').slick('slickPrev')
+    })
+    $('.testimonial__next').on('click', function (e) {
+        e.preventDefault()
+        $('.testimonials__slider').slick('slickNext')
+    })
+
 })
