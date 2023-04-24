@@ -91,6 +91,14 @@ html, body {
     padding-bottom: 195px;
 }
 
+.main__companies {
+    padding-bottom: 177px;
+}
+
+.main__program {
+    padding: 115px 0 185px;
+}
+
 /* ////////////////////////////////////////////////////////////////////////// */
 
 .header {
@@ -772,6 +780,7 @@ html, body {
     position: relative;
     background: #f4f5f7;
 }
+
 .testimonials::before {
     content: "";
     position: absolute;
@@ -857,6 +866,7 @@ html, body {
     font-weight: 400;
     line-height: 160%;
 }
+
 .testimonials__arrow {
     position: absolute;
     top: 0;
@@ -866,9 +876,11 @@ html, body {
     align-items: center;
     z-index: 5;
 }
+
 .testimonials__arrow path {
     transition: all .3s;
 }
+
 .testimonials__arrow::before {
     content: "";
     position: absolute;
@@ -882,47 +894,59 @@ html, body {
     z-index: -1;
     transition: all .3s;
 }
+
 .testimonials__arrow svg {
     left: 0;
     justify-self: flex-start;
 }
+
 .testimonials__prev {
     left: 0;
 }
+
 .testimonials__prev::before {
     left: 20%;
     transform: translate(-50%, -50%) scale(0);
 }
+
 .testimonials__next {
     right: 0;
     justify-content: flex-end;
 
 }
+
 .testimonials__next::before {
     left: 80%;
     transform: translate(-50%, -50%) scale(0);
 
 }
+
 .testimonials__arrow:hover path {
     fill: #fff;
 }
+
 .testimonials__prev:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
+
 .testimonials__next:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
+
 .testimonials__dots .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .testimonials__dots li {
     margin-right: 12px;
 }
+
 .testimonials__dots li:last-child {
     margin-right: 12px;
 }
+
 .testimonials__dots button {
     font-size: 0;
     background-color: transparent;
@@ -931,6 +955,7 @@ html, body {
     display: flex;
     align-items: center;
 }
+
 .testimonials__dots button::before {
     content: "";
     height: 3px;
@@ -938,7 +963,122 @@ html, body {
     background-color: #B3B7BC;
     border-radius: 3px;
 }
+
 .testimonials__dots .slick-active button::before {
     background-color: #424551;
     transition: all .3s;
+}
+
+/* /////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+
+
+.companies {
+    background: #F4F5F7;
+}
+.companies__inner {
+    position: relative;
+}
+.companies__inner::before {
+    position: absolute;
+    content: "";
+    top: 350px;
+    left: -240px;
+    width: 90px;
+    height: 90px;
+    background: url(../img/block4/Group2.svg) 0 0 / 100% no-repeat;
+}
+
+.companies__heading {
+    margin-bottom: 60px;
+}
+
+.companies__grid {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(6, 1fr);
+    gap: 40px 100px;
+}
+
+.companies__grid-item {}
+
+.companies__grid-link {
+    display: block;
+}
+
+.companies__grid-link img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+    opacity: 0.6;
+    transition: all 1.3s;
+}
+
+.companies__grid-link:hover img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(0);
+    opacity: 1;
+    transition: all .3s;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+.program {
+}
+.program__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.program__content {
+    margin-right: 30px;
+    max-width: 600px;
+}
+.program__heading {
+    margin-bottom: 60px;
+}
+.program__accrodeon {
+}
+.program__acc-item {
+    margin-bottom: 24px;
+}
+.program__acc-link {
+    padding-left: 40px;
+    display: block;
+}
+.program__acc-item:last-child {
+    margin-bottom: 0px;
+}
+.program__acc-head {
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 20px;
+    color: #1E212C;
+    position: relative;
+}
+.program__acc-head span{
+    font-weight: 400;
+    color: #FF3F3A;
+}
+.program__acc-head::before,
+.program__acc-head::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 18px;
+    height: 2px;
+    background-color: #FF3F3A;
+    border-radius: 2px;
+}
+.program__acc-head::after {
+    transform: rotate(90deg);
+    transition: all .3s;
+}
+.program__acc-text {
+    margin-top: 16px;
+}
+.program__acc-link--active .program__acc-head::after {
+    transform: rotate(0deg);
+}
+.program__img {
 }
