@@ -57,7 +57,7 @@ $(function () {
             $('.program__acc-text').slideUp()
             $(this).addClass('program__acc-link--active')
             $(this).children('.program__acc-text').slideDown()
-            
+
         }
     })
 
